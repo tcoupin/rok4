@@ -27,6 +27,13 @@ Pour Be4 :
 Pour générer la documation du code :
 `sudo apt-get install doxygen graphviz naturaldocs`
 
+### Pour Raspberrypi
+Il manque un fichier dans les librairies installées sur raspbian. Pour corriger cela, il faut récupérer le fichier en question :
+
+```
+sudo curl -o /usr/include/mm_malloc.h "http://www.opensource.apple.com/source/clang/clang-137/src/tools/clang/lib/Headers/mm_malloc.h?txt"
+```
+
 ## La compilation
 ```
 mkdir build 
