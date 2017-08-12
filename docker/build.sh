@@ -22,5 +22,3 @@ fi
 mkdir build 
 docker exec -u $UID build bash -c 'cd /rok4/build && cmake .. -DBUILD_ROK4=TRUE -DBUILD_BE4=TRUE -DBUILD_DOC=FALSE -DUNITTEST=false -DDEBUG_BUILD=FALSE'
 docker exec -u $UID build bash -c "cd /rok4/build && make package"
-
-docker kill build
