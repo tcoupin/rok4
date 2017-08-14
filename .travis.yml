@@ -8,6 +8,7 @@ env:
   - ARCH=arm
 
 script:
+  - chmod -R 777 *
   - bash docker/build.sh
 
 deploy:
